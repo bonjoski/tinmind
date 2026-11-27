@@ -1,0 +1,14 @@
+# Binaries
+/tinmind
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+coverage.txt
+
+# Local traces and receipts
+.fabrial/
+.tinmind/
+.DS_Store

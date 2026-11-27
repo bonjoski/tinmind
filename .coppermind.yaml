@@ -1,0 +1,7 @@
+scope: bonjoski/tinmind
+paths:
+  pkg/ptyrec: bonjoski/tinmind/ptyrec
+  pkg/trace: bonjoski/tinmind/trace
+  pkg/redact: bonjoski/tinmind/redact
+  pkg/replay: bonjoski/tinmind/replay
+  pkg/receipt: bonjoski/tinmind/receipt

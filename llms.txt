@@ -1,0 +1,7 @@
+# tinmind
+
+> Sovereign local PTY flight recorder & deterministic TTY replay for autonomous coding agents (`bonjoski/tinmind`, MIT, Go 1.27+).
+
+- `tinmind record -- <cmd>`: Captures PTY streams via a non-blocking 16 MiB ring buffer (`<0.05ms` write overhead) with pre-disk secret redaction (`0600` inside `os.OpenRoot`) and `.jsonl.zst` streaming compression.
+- `tinmind replay <id>`: Deterministic playback of Tinmind `.jsonl.zst` and Aegisbox `.jsonl` traces with `--safe-ansi` enabled by default (blocking OSC-52 clipboard writes and control injections).
+- `tinmind list` / `inspect` / `export --for-coppermind` / `prune` / `doctor`: Local trace management, `<=16 MiB` Coppermind post-mortem export, `BLPR-v1` DSSE receipts, and 500 MiB / 7-day FIFO pruning.
