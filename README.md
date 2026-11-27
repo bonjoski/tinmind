@@ -81,4 +81,4 @@ See [docs/use-cases/01-debugging-derailed-agent-swarms.md](docs/use-cases/01-deb
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+Apache 2.0 — see [LICENSE](LICENSE).

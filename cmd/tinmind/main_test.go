@@ -9,6 +9,7 @@ import (
 	"testing"
 
 	"github.com/bonjoski/tinmind/pkg/ux"
+	"github.com/bonjoski/tinmind/pkg/version"
 )
 
 func TestCLI_RecordInspectReplayExportPruneDoctor(t *testing.T) {
@@ -95,7 +96,7 @@ func TestCLI_RecordInspectReplayExportPruneDoctor(t *testing.T) {
 	}
 	stdout.Reset()
 	stderr.Reset()
-	if code := run([]string{"version"}, nil, &stdout, &stderr); code != 0 || !strings.Contains(stdout.String(), "tinmind v0.1.0") {
+	if code := run([]string{"version"}, nil, &stdout, &stderr); code != 0 || !strings.Contains(stdout.String(), "tinmind v"+version.Version) {
 		t.Fatalf("version exit=%d out=%q", code, stdout.String())
 	}
 }
